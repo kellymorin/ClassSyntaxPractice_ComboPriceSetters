@@ -10,7 +10,7 @@ class Restaurant {
     this.menu = props.menu
 }
 
-  set Combo (props) {
+  set _combo (props) {
     props.forEach(prop => {
       this.combo += prop
     })
@@ -37,4 +37,4 @@ const bobsBurgers = new Restaurant({
 })
 bobsBurgers
 
-bobsBurgers.combo = [bobsBurgers.menu.fries, bobsBurgers.menu.milkshake]
+bobsBurgers._combo = [bobsBurgers.menu.fries, bobsBurgers.menu.milkshake]
